@@ -1,0 +1,445 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17636,        437]
+NotebookOptionsPosition[     17076,        418]
+NotebookOutlinePosition[     17453,        435]
+CellTagsIndexPosition[     17410,        432]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "\:52a0\:8f7d\:8fd9\:4e2acell\:7684\:5168\:90e8\:51fd\:6570", ",", 
+    "\:4e0b\:4e2acell\:662f\:4f8b\:5b50"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:8bf7\:4e0b\:8f7dffmpeg", ",", 
+    "\:5e76\:8bbe\:7f6e\:73af\:5883\:53d8\:91cf", ",", 
+    "\:4f7f\:5f97cmd\:53ef\:4ee5\:4f7f\:7528ffmpeg\:547d\:4ee4\:884c"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"HDTV", "=", "\"\<colormatrix=bt601:bt709\>\""}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"box", "[", 
+      RowBox[{"input_Graphics", "|", "input_Graphics3D"}], "]"}], ":=", 
+     RowBox[{"ToBoxes", "[", "input", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"box", "[", 
+      RowBox[{"input_GraphicsBox", "|", "input_Graphics3DBox"}], "]"}], ":=", 
+     "input"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"raster", "[", 
+      RowBox[{
+       RowBox[{
+       "input_Graphics", "|", "input_Graphics3D", "|", "input_GraphicsBox", 
+        "|", "input_Graphics3DBox"}], ",", "format_String"}], "]"}], ":=", 
+     RowBox[{"First", "@", 
+      RowBox[{"MathLink`FrontEndBlock", "[", 
+       RowBox[{
+        RowBox[{"MathLink`CallFrontEnd", "@", 
+         RowBox[{"ExportPacket", "[", 
+          RowBox[{
+           RowBox[{"BoxData", "@", 
+            RowBox[{"box", "@", "input"}]}], ",", "format", ",", 
+           RowBox[{"ColorSpace", "\[Rule]", "\"\<RGB\>\""}], ",", 
+           RowBox[{"Verbose", "\[Rule]", "False"}], ",", 
+           RowBox[{
+           "\"\<AlphaChannel\>\"", " ", "\[Rule]", " ", "\"\<False\>\""}], 
+           ",", 
+           RowBox[{"\"\<DataCompression\>\"", " ", "\[Rule]", "False"}]}], 
+          "]"}]}], ",", 
+        RowBox[{"Developer`InstallFrontEnd", "[", "]"}]}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Options", "[", "VideoExport", "]"}], "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\<FrameRate\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<Size\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<Filter\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<PixelFormat\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<Encoder\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<Command\>\"", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"\"\<Pipe\>\"", "\[Rule]", "\"\<PNG\>\""}], ",", 
+       RowBox[{"\"\<Buffer\>\"", "\[Rule]", "64"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"VideoExport", "[", 
+     RowBox[{"address_String", ",", "expr_", ",", 
+      RowBox[{"OptionsPattern", "[", "]"}]}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Block", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "option", ",", "pipe", ",", "buffer", ",", "stream", ",", 
+        "totalframes", ",", "PartSend"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"option", "[", "key_", "]"}], ":=", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"OptionValue", "[", "key", "]"}], "===", "Automatic"}], "||", 
+           RowBox[{
+            RowBox[{"OptionValue", "[", "key", "]"}], "===", "\"\<\>\""}]}], 
+          ",", "\[IndentingNewLine]", 
+          RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"key", "===", "\"\<Size\>\""}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<-s\>\"", ",", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"ToString", "[", "#1", "]"}], "<>", "\"\<*\>\"", "<>", 
+                 RowBox[{"ToString", "[", "#2", "]"}]}], "&"}], "@@", 
+               RowBox[{"OptionValue", "[", "key", "]"}]}]}], "}"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Switch", "[", "\[IndentingNewLine]", 
+               RowBox[{
+               "key", ",", "\[IndentingNewLine]", "\"\<FrameRate\>\"", ",", 
+                "\"\<-r\>\"", ",", "\[IndentingNewLine]", "\"\<Filter\>\"", 
+                ",", "\"\<-vf\>\"", ",", "\[IndentingNewLine]", 
+                "\"\<PixelFormat\>\"", ",", "\"\<-pix_fmt\>\"", ",", 
+                "\[IndentingNewLine]", "\"\<Encoder\>\"", ",", 
+                "\"\<-vcodec\>\"", ",", "\[IndentingNewLine]", "_", ",", 
+                "Nothing"}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"ToString", "@", 
+               RowBox[{"OptionValue", "[", "key", "]"}]}]}], "}"}]}], "]"}]}],
+          "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"pipe", "=", 
+        RowBox[{"OptionValue", "[", "\"\<Pipe\>\"", "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"buffer", "=", 
+        RowBox[{"OptionValue", "[", "\"\<Buffer\>\"", "]"}]}], ";", 
+       RowBox[{"stream", "=", 
+        RowBox[{"OpenWrite", "[", 
+         RowBox[{
+          RowBox[{"StringRiffle", "[", 
+           RowBox[{
+            RowBox[{"Flatten", "[", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<!ffmpeg\>\"", ",", "\"\<-f\>\"", ",", "\"\<image2pipe\>\"",
+                ",", 
+               RowBox[{"option", "[", "\"\<FrameRate\>\"", "]"}], ",", 
+               "\"\<-i\>\"", ",", "\"\<-\>\"", ",", 
+               RowBox[{"option", "[", "\"\<Size\>\"", "]"}], ",", 
+               RowBox[{"option", "[", "\"\<Filter\>\"", "]"}], ",", 
+               RowBox[{"option", "[", "\"\<PixelFormat\>\"", "]"}], ",", 
+               RowBox[{"option", "[", "\"\<Encoder\>\"", "]"}], ",", 
+               RowBox[{"option", "[", "\"\<Command\>\"", "]"}], ",", 
+               "address"}], "}"}], "]"}], ",", "\"\< \>\""}], "]"}], ",", 
+          RowBox[{"BinaryFormat", "\[Rule]", "True"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"totalframes", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", 
+         RowBox[{"input", ":", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"_Graphics", ".."}], "|", 
+            RowBox[{"_Graphics3D", ".."}], "|", 
+            RowBox[{"_GraphicsBox", ".."}], "|", 
+            RowBox[{"_Graphics3DBox", ".."}]}], "}"}]}], "]"}], ":=", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Do", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"BinaryWrite", "[", 
+               RowBox[{"stream", ",", "#"}], "]"}], ";", 
+              RowBox[{"totalframes", "++"}]}], ")"}], "&"}], "/@", 
+           RowBox[{"ParallelMap", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"raster", "[", 
+               RowBox[{"#", ",", "pipe"}], "]"}], "&"}], ",", 
+             RowBox[{"input", "[", 
+              RowBox[{"[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"buffer", " ", "j"}], "+", "1"}], ";;", 
+                RowBox[{"UpTo", "[", 
+                 RowBox[{"buffer", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"j", "+", "1"}], ")"}]}], "]"}]}], "]"}], "]"}], 
+             ",", 
+             RowBox[{"Method", "->", "\"\<CoarsestGrained\>\""}]}], "]"}]}], 
+          ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "0", ",", 
+            RowBox[{"Floor", "[", 
+             FractionBox[
+              RowBox[{
+               RowBox[{"Length", "[", "input", "]"}], "-", "1"}], "buffer"], 
+             "]"}]}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+           "input_Graphics", "|", "input_Graphics3D", "|", 
+            "input_GraphicsBox", "|", "input_Graphics3DBox"}], ",", 
+           RowBox[{"times_Integer:", "1"}]}], "}"}], "]"}], ":=", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Do", "[", 
+             RowBox[{
+              RowBox[{"BinaryWrite", "[", 
+               RowBox[{"stream", ",", "#"}], "]"}], ",", "times"}], "]"}], 
+            "&"}], "@", 
+           RowBox[{"raster", "[", 
+            RowBox[{"input", ",", "pipe"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"totalframes", "+=", "times"}]}], ")"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", 
+         RowBox[{
+         "input_Graphics", "|", "input_Graphics3D", "|", "input_GraphicsBox", 
+          "|", "input_Graphics3DBox"}], "]"}], ":=", "\[IndentingNewLine]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"BinaryWrite", "[", 
+           RowBox[{"stream", ",", 
+            RowBox[{"raster", "[", 
+             RowBox[{"input", ",", "pipe"}], "]"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"totalframes", "++"}]}], ")"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", 
+         RowBox[{"input", ":", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"_Image", ".."}], "|", 
+            RowBox[{"_Image3D", ".."}]}], "}"}]}], "]"}], ":=", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Export", "[", 
+             RowBox[{"stream", ",", "#", ",", "\"\<PNG\>\""}], "]"}], ";", 
+            "\[IndentingNewLine]", 
+            RowBox[{"totalframes", "++"}]}], ")"}], "&"}], "/@", "input"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"function_Function", "|", "function_Symbol"}], ",", 
+           "par_List"}], "}"}], "]"}], ":=", "\[IndentingNewLine]", 
+        RowBox[{"Do", "[", 
+         RowBox[{
+          RowBox[{"PartSend", "[", 
+           RowBox[{"function", "/@", 
+            RowBox[{"par", "[", 
+             RowBox[{"[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"buffer", " ", "j"}], "+", "1"}], ";;", 
+               RowBox[{"UpTo", "[", 
+                RowBox[{"buffer", 
+                 RowBox[{"(", 
+                  RowBox[{"j", "+", "1"}], ")"}]}], "]"}]}], "]"}], "]"}]}], 
+           "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "0", ",", 
+            RowBox[{"Floor", "[", 
+             FractionBox[
+              RowBox[{
+               RowBox[{"Length", "[", "par", "]"}], "-", "1"}], "buffer"], 
+             "]"}]}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PartSend", "[", "input_List", "]"}], ":=", 
+        RowBox[{"PartSend", "/@", "input"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Monitor", "[", 
+        RowBox[{
+         RowBox[{"PartSend", "[", "expr", "]"}], ",", 
+         RowBox[{"Column", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<\:5df2\:5199\:5165\>\"", "<>", 
+            RowBox[{"ToString", "[", "totalframes", "]"}], "<>", 
+            "\"\<\:5e27\>\""}], "}"}], "]"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Close", "[", "stream", "]"}]}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.753099158813933*^9, 3.753099226703046*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"58831cca-a1c7-40ae-a8a7-7a72ee80c8a5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "\:4e00\:4e2a\:4f8b\:5b50", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"g1", "[", "frame_", "]"}], ":=", 
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", "frame", "]"}], ",", "480"}], "]"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1920", ",", "1080"}], "}"}]}], ",", 
+      RowBox[{"Background", "\[Rule]", "Green"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"g2", "[", "frame_", "]"}], ":=", 
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"Disk", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", 
+        RowBox[{"frame", "/", "20"}]}], "]"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "16"}], ",", "16"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "9"}], ",", "9"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1920", ",", "1080"}], "}"}]}], ",", 
+      RowBox[{"Background", "\[Rule]", "Green"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"VideoExport", "[", 
+    RowBox[{"\"\<E:\\\\test.mp4\>\"", ",", 
+     RowBox[{"(*", "\:8f93\:51fa\:89c6\:9891\:5730\:5740", "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"g1", ",", 
+         RowBox[{"Range", "[", 
+          RowBox[{"1", ",", "120"}], "]"}]}], "}"}], ",", 
+       RowBox[{"(*", 
+        RowBox[{"\:7247\:6bb51", ":", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"g1", "[", "1", "]"}], "~", 
+           RowBox[{"g1", "[", "120", "]"}]}], "\:5171120\:5e27"}]}], "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"g2", ",", 
+         RowBox[{"Range", "[", 
+          RowBox[{"1", ",", "120"}], "]"}]}], "}"}]}], 
+      RowBox[{"(*", 
+       RowBox[{"\:7247\:6bb52", ":", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"g2", "[", "1", "]"}], "~", 
+          RowBox[{"g2", "[", "120", "]"}]}], "\:5171120\:5e27"}]}], "*)"}], 
+      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"\"\<FrameRate\>\"", "\[Rule]", "60"}], ",", 
+     RowBox[{"(*", "\:5e27\:7387", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<Size\>\"", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1920", ",", "1080"}], "}"}]}], ",", 
+     RowBox[{"(*", "\:5206\:8fa8\:7387", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<Filter\>\"", "\[Rule]", "HDTV"}], ",", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"720", "p\:4ee5\:4e0a\:9009HDTV"}], ",", 
+       "\:5426\:5219\:9009Automatic"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<PixelFormat\>\"", "\[Rule]", "\"\<yuv420p\>\""}], ",", 
+     RowBox[{"(*", 
+      RowBox[{
+      "\:63a8\:8350yuv420p", ",", 
+       "\:517c\:5bb9\:6240\:6709\:64ad\:653e\:5668\:548c\:89c6\:9891\:7f51\
+\:7ad9"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<Encoder\>\"", "\[Rule]", "\"\<libx264\>\""}], ",", 
+     RowBox[{"(*", "\:63a8\:8350libx264", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<Command\>\"", "\[Rule]", "\"\<-crf 18\>\""}], ",", 
+     RowBox[{
+     "(*", "\:7f16\:7801\:5668\:7684\:5176\:4ed6\:538b\:5236\:53c2\:6570", 
+      "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"\"\<Buffer\>\"", "\[Rule]", "64"}]}], 
+    RowBox[{"(*", 
+     RowBox[{
+     "\:7f13\:5b58\:533a\:7684\:5e27\:6570", ",", 
+      "\:5efa\:8bae\:4e0d\:8981\:5f00\:592a\:9ad8", ",", 
+      "\:5426\:5219\:7206\:5185\:5b58"}], "*)"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7530975849044857`*^9, 3.7530976761205025`*^9}, {
+   3.753097823584324*^9, 3.7530978652648554`*^9}, {3.753097923606861*^9, 
+   3.7530979985438185`*^9}, {3.7530980500957074`*^9, 
+   3.7530983660058575`*^9}, {3.753098398645506*^9, 3.75309840208291*^9}, 
+   3.7530986620834675`*^9, {3.753098722033251*^9, 3.753098750060331*^9}, {
+   3.7530988304136047`*^9, 3.7530988369289804`*^9}, {3.7530988684348326`*^9, 
+   3.75309891972704*^9}, {3.753098967722665*^9, 3.753099048015811*^9}, {
+   3.7530991335347786`*^9, 3.7530991394059515`*^9}, {3.7530992446713*^9, 
+   3.75309924954611*^9}, {3.753099299074579*^9, 3.7530993066208057`*^9}, {
+   3.753099375761155*^9, 3.753099388525075*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"9a209206-d960-4a04-8a5c-a4f77c56257a"],
+
+Cell[BoxData["\<\"!ffmpeg -f image2pipe -r 60 -i - -s 1920*1080 -vf \
+colormatrix=bt601:bt709 -pix_fmt yuv420p -vcodec libx264 -crf 18 \
+E:\\\\test.mp4\"\>"], "Output",
+ CellChangeTimes->{3.753098017447544*^9, 3.7530984213635745`*^9, 
+  3.753099066718457*^9, 3.7530994130917826`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"fe987dc6-b96d-4654-a341-1ee14f0ccdf7"]
+}, Open  ]]
+},
+WindowSize->{1280, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification->1.5,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 11571, 278, 2622, "Input",ExpressionUUID->"58831cca-a1c7-40ae-a8a7-7a72ee80c8a5"],
+Cell[CellGroupData[{
+Cell[12154, 302, 4541, 106, 655, "Input",ExpressionUUID->"9a209206-d960-4a04-8a5c-a4f77c56257a"],
+Cell[16698, 410, 362, 5, 111, "Output",ExpressionUUID->"fe987dc6-b96d-4654-a341-1ee14f0ccdf7"]
+}, Open  ]]
+}
+]
+*)
+

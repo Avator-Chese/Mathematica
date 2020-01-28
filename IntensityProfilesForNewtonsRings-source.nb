@@ -1,0 +1,985 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     40037,        975]
+NotebookOptionsPosition[     38583,        922]
+NotebookOutlinePosition[     39239,        947]
+CellTagsIndexPosition[     39196,        944]
+WindowTitle->Intensity Profiles for Newton's Rings - Source
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Intensity Profiles for Newton's Rings", "Section",
+ CellFrame->{{0, 0}, {0, 0}},
+ ShowCellBracket->False,
+ FontColor->RGBColor[0.597406, 0, 0.0527047]],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1: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
+AAAAAAAAgI3xP5e3Sto=
+   "], {{0, 0}, {1800, 25}}, {0, 255},
+   ColorFunction->RGBColor],
+  ImageSize->{1800, 25},
+  PlotRange->{{0, 1800}, {0, 25}}]], "Section",
+ CellFrame->{{0, 0}, {0, 0}},
+ ShowCellBracket->False],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Switch", "[", 
+    RowBox[{"a", ",", "\[IndentingNewLine]", "1", ",", 
+     RowBox[{"DensityPlot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Pi", "*", "2", "*", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"x", "^", "2"}], "+", 
+                   RowBox[{"y", "^", "2"}]}], ")"}], "/", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+             ")"}], "+", 
+            RowBox[{"Pi", "/", "2"}]}], ")"}], "]"}], ")"}], "^", "2"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "0.2"}], ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", 
+         RowBox[{"-", "0.2"}], ",", "0.2"}], "}"}], ",", 
+       RowBox[{"PlotPoints", "\[Rule]", "70"}], ",", 
+       RowBox[{"FrameTicksStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<distance, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+          ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<distance, cm\>\"", ",", "Black", ",", "14"}], "]"}]}],
+          "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", "2", ",", 
+     RowBox[{"DensityPlot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"(", 
+           RowBox[{"(", 
+            RowBox[{"Pi", "*", "2", "*", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"x", "^", "2"}], "+", 
+                  RowBox[{"y", "^", "2"}]}], ")"}], "/", 
+                RowBox[{"(", 
+                 RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], ")"}],
+            ")"}], "]"}], ")"}], "^", "2"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "0.2"}], ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", 
+         RowBox[{"-", "0.2"}], ",", "0.2"}], "}"}], ",", 
+       RowBox[{"PlotPoints", "\[Rule]", "70"}], ",", 
+       RowBox[{"FrameTicksStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<distance, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+          ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<distance, cm\>\"", ",", "Black", ",", "14"}], "]"}]}],
+          "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", "3", ",", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Pi", "*", "2", "*", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"r", "^", "2"}], "/", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+             ")"}], "+", 
+            RowBox[{"Pi", "/", "2"}]}], ")"}], "]"}], ")"}], "^", "2"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+       RowBox[{"FrameTicksStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<radius, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+          ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<intensity, a.u.\>\"", ",", "Black", ",", "14"}], 
+           "]"}]}], "}"}]}], ",", 
+       RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"Darker", "[", "Yellow", "]"}]}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", "4", ",", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"(", 
+           RowBox[{"(", 
+            RowBox[{"Pi", "*", "2", "*", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"r", "^", "2"}], "/", 
+                RowBox[{"(", 
+                 RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], ")"}],
+            ")"}], "]"}], ")"}], "^", "2"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+       RowBox[{"FrameTicksStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<radius, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+          ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<intensity, a.u.\>\"", ",", "Black", ",", "14"}], 
+           "]"}]}], "}"}]}], ",", 
+       RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"Darker", "[", "Pink", "]"}]}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", "5", ",", 
+     RowBox[{"Show", "[", 
+      RowBox[{
+       RowBox[{"DensityPlot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"Pi", "*", "2", "*", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"r", "^", "2"}], "/", 
+                   RowBox[{"(", 
+                    RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+               ")"}], "+", 
+              RowBox[{"Pi", "/", "2"}]}], ")"}], "]"}], ")"}], "^", "2"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"y", ",", "0.001", ",", "1"}], "}"}], ",", 
+         RowBox[{"PlotPoints", "\[Rule]", "100"}], ",", 
+         RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+         RowBox[{"FrameTicksStyle", "\[Rule]", 
+          RowBox[{"Directive", "[", 
+           RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"FrameLabel", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<radius, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+            ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<intensity, a.u.\>\"", ",", "Black", ",", "14"}], 
+             "]"}]}], "}"}]}], ",", 
+         RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ",", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"Pi", "*", "2", "*", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"r", "^", "2"}], "/", 
+                   RowBox[{"(", 
+                    RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+               ")"}], "+", 
+              RowBox[{"Pi", "/", "2"}]}], ")"}], "]"}], ")"}], "^", "2"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+         RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"FrameLabel", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+           "\"\<radius, cm\>\"", ",", "\"\<intensity, a.u.\>\"", ",", 
+            "\"\<Newton's rings (reflected)\>\""}], "}"}]}], ",", 
+         RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Darker", "[", "Blue", "]"}], ",", "Dashed"}], "}"}]}]}], 
+        "]"}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", "6", ",", 
+     RowBox[{"Show", "[", 
+      RowBox[{
+       RowBox[{"DensityPlot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"(", 
+             RowBox[{"(", 
+              RowBox[{"Pi", "*", "2", "*", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"r", "^", "2"}], "/", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+              ")"}], ")"}], "]"}], ")"}], "^", "2"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"y", ",", "0.001", ",", "1"}], "}"}], ",", 
+         RowBox[{"PlotPoints", "\[Rule]", "100"}], ",", 
+         RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+         RowBox[{"FrameTicksStyle", "\[Rule]", 
+          RowBox[{"Directive", "[", 
+           RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"FrameLabel", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<radius, cm\>\"", ",", "Black", ",", "14"}], "]"}], 
+            ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<intensity, a.u.\>\"", ",", "Black", ",", "14"}], 
+             "]"}]}], "}"}]}], ",", 
+         RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ",", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"(", 
+             RowBox[{"(", 
+              RowBox[{"Pi", "*", "2", "*", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"r", "^", "2"}], "/", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "R"}], ")"}]}], ")"}], "/", "lambda"}]}], 
+              ")"}], ")"}], "]"}], ")"}], "^", "2"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"r", ",", "0.001", ",", "0.2"}], "}"}], ",", 
+         RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "400"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"FrameLabel", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+           "\"\<radius, cm\>\"", ",", "\"\<intensity, a.u.\>\"", ",", 
+            "\"\<Newton's rings(transmitted)\>\""}], "}"}]}], ",", 
+         RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Darker", "[", "Purple", "]"}], ",", "Dashed"}], 
+           "}"}]}]}], "]"}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Control", "@", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"R", ",", "60", ",", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", 
+              RowBox[{"\"\<radius of curvature of lens \>\"", ",", 
+               RowBox[{"Style", "[", 
+                RowBox[{"\"\<R\>\"", ",", "Italic"}], "]"}], ",", " ", 
+               "\"\<, cm\>\""}], "}"}], "]"}]}], "}"}], ",", "20", ",", "150",
+           ",", "10", ",", 
+          RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+       ",", 
+       RowBox[{"Control", "@", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"lambda", ",", 
+            RowBox[{
+             RowBox[{"5", "*", 
+              RowBox[{"10", "^", 
+               RowBox[{"-", "5"}]}]}], "//", "N"}], ",", 
+            "\"\<wavelength \[Lambda], cm\>\""}], "}"}], ",", 
+          RowBox[{
+           RowBox[{"4", "*", 
+            RowBox[{"10", "^", 
+             RowBox[{"-", "5"}]}]}], "//", "N"}], ",", 
+          RowBox[{
+           RowBox[{"8", "*", 
+            RowBox[{"10", "^", 
+             RowBox[{"-", "5"}]}]}], "//", "N"}], ",", 
+          RowBox[{
+           RowBox[{"1", "*", 
+            RowBox[{"10", "^", 
+             RowBox[{"-", "5"}]}]}], "//", "N"}], ",", 
+          RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"Control", "@", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"a", ",", "1", ",", "\"\<plots\>\""}], "}"}], ",", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{
+            "1", "\[Rule]", " ", 
+             "\"\<simulation of Newton's rings (reflected)\>\""}], ",", 
+            RowBox[{
+            "2", "\[Rule]", " ", 
+             "\"\<simulation of Newton's rings (transmitted)\>\""}], ",", 
+            RowBox[{
+            "3", "\[Rule]", 
+             "\"\<line intensity profile of Newton's rings (reflected)\>\""}],
+             ",", 
+            RowBox[{
+            "4", "\[Rule]", 
+             "\"\<line intensity profile of Newton's rings \
+(transmitted)\>\""}], ",", 
+            RowBox[{
+            "5", "\[Rule]", 
+             "\"\<Newton's rings (reflected) intensity profile: combined plot\
+\>\""}], ",", 
+            RowBox[{
+            "6", "\[Rule]", 
+             "\"\<Newton's rings (transmitted) intensity profile: combined \
+plot\>\""}]}], "\[IndentingNewLine]", "}"}], ",", 
+          RowBox[{"ControlType", "\[Rule]", "PopupMenu"}]}], "}"}]}]}], 
+      "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.6723130569875364`*^9, 3.672313139271158*^9}, {
+   3.6723132059386597`*^9, 3.672313246645224*^9}, {3.6723134058084073`*^9, 
+   3.672313416429625*^9}, {3.672313451045804*^9, 3.672313461420747*^9}, {
+   3.672313523894911*^9, 3.6723135242803693`*^9}, {3.672313562376623*^9, 
+   3.672313568661972*^9}, {3.6723136379600525`*^9, 3.6723136389134164`*^9}, {
+   3.6723136731835704`*^9, 3.672313699134135*^9}, {3.6723137547028604`*^9, 
+   3.672313800025696*^9}, {3.672314024452655*^9, 3.6723140288702097`*^9}, {
+   3.672314126476508*^9, 3.6723141330178366`*^9}, {3.6723141802980766`*^9, 
+   3.672314185715622*^9}, {3.6723144287925186`*^9, 3.67231444044001*^9}, {
+   3.672314477709343*^9, 3.6723144965392647`*^9}, {3.6723145737129173`*^9, 
+   3.672314676386701*^9}, {3.6724082378127856`*^9, 3.6724082632261543`*^9}, {
+   3.672408366366366*^9, 3.6724084005855203`*^9}, {3.6724084401709857`*^9, 
+   3.672408478905818*^9}, {3.6724085165393176`*^9, 3.672408560218871*^9}, {
+   3.6724804424717426`*^9, 3.6724804838036366`*^9}, {3.672480529347271*^9, 
+   3.67248055908951*^9}, {3.672480615034869*^9, 3.67248063705357*^9}, {
+   3.6724808180789957`*^9, 3.672480856975439*^9}, {3.6724809309401903`*^9, 
+   3.672480954889904*^9}, 3.6724810342074633`*^9, {3.672481070747692*^9, 
+   3.672481079242467*^9}, {3.672481112610318*^9, 3.67248111495103*^9}, {
+   3.672495655103159*^9, 3.6724956648522863`*^9}, {3.6724956976420617`*^9, 
+   3.672495710402237*^9}, 3.6724957410590105`*^9, 3.6724958401529684`*^9, {
+   3.6725630746795382`*^9, 3.672563103134901*^9}, {3.672563218837376*^9, 
+   3.6725632286275425`*^9}, {3.6725632955315676`*^9, 
+   3.6725633616454687`*^9}, {3.6725634457563105`*^9, 3.672563447412372*^9}, {
+   3.672563951431348*^9, 3.672563976498659*^9}, {3.6725640771770773`*^9, 
+   3.67256414681644*^9}, {3.6725645258156505`*^9, 3.6725645351846085`*^9}, {
+   3.6725645675412836`*^9, 3.672564578378111*^9}, 3.6725646148349094`*^9, 
+   3.6725647619265375`*^9, {3.6725648222030067`*^9, 3.672564833188178*^9}, {
+   3.672564865162506*^9, 3.6725648714501276`*^9}, 3.672564947320553*^9, {
+   3.672565019414548*^9, 3.6725650290192647`*^9}, {3.672565189238706*^9, 
+   3.6725651961111555`*^9}, {3.6725653143960876`*^9, 
+   3.6725653353057985`*^9}, {3.6725654300659657`*^9, 3.672565434669552*^9}, 
+   3.6725654880120687`*^9, {3.6725655307232504`*^9, 3.6725655756079917`*^9}, {
+   3.672565638761262*^9, 3.6725656442110057`*^9}, {3.672565707381977*^9, 
+   3.672565728274159*^9}, {3.672648848635331*^9, 3.672648863512272*^9}, {
+   3.674534881562058*^9, 3.674534886343034*^9}, {3.674534936770076*^9, 
+   3.6745349611522875`*^9}, {3.6745350576370792`*^9, 3.67453506149212*^9}, {
+   3.6745351009721193`*^9, 3.6745351836616917`*^9}, {3.67453523982819*^9, 
+   3.674535304019383*^9}, {3.6745353932821093`*^9, 3.67453543860884*^9}, {
+   3.6745355024587245`*^9, 3.674535522839942*^9}, {3.674535618397152*^9, 
+   3.674535634078246*^9}, {3.6745357982584085`*^9, 3.6745358083724566`*^9}, {
+   3.6745358715904202`*^9, 3.674535872547871*^9}, {3.674535904040881*^9, 
+   3.6745359930240684`*^9}, {3.674536069967065*^9, 3.6745360920669456`*^9}, {
+   3.674536182087082*^9, 3.6745362072975287`*^9}, {3.6745424862595205`*^9, 
+   3.674542565653152*^9}, {3.674542626867922*^9, 3.67454269387521*^9}, {
+   3.6745427392939577`*^9, 3.67454276228428*^9}, {3.674542861646328*^9, 
+   3.674542877524358*^9}, {3.674543019049905*^9, 3.6745430304053736`*^9}, {
+   3.6745431859112597`*^9, 3.674543214449689*^9}, {3.6745432754250145`*^9, 
+   3.674543294406327*^9}, {3.674543364085389*^9, 3.6745434098738337`*^9}, {
+   3.6745434830534973`*^9, 3.674543492152804*^9}, 3.674543549034869*^9, {
+   3.6745436472242765`*^9, 3.6745436676415234`*^9}, {3.674543907948653*^9, 
+   3.674543940634946*^9}, {3.675156807128558*^9, 3.67515685642445*^9}, 
+   3.675252760343605*^9, {3.6752528128713026`*^9, 3.675252819507647*^9}, {
+   3.675252893754864*^9, 3.6752529076621666`*^9}, {3.6752530232628794`*^9, 
+   3.675253059699139*^9}, {3.6752530944854946`*^9, 3.675253095132942*^9}, {
+   3.67525715562881*^9, 3.6752571652915783`*^9}, {3.6752572317487555`*^9, 
+   3.6752572712297196`*^9}, {3.675257331098979*^9, 3.675257390525876*^9}, {
+   3.67525744312494*^9, 3.675257520805318*^9}, {3.6752584046607714`*^9, 
+   3.6752584450351367`*^9}, {3.6752585142490807`*^9, 3.675258526532197*^9}, {
+   3.6752592473697023`*^9, 3.6752592690523705`*^9}, {3.675259324705954*^9, 
+   3.675259344267022*^9}, {3.6754664742902355`*^9, 3.675466476718507*^9}, {
+   3.6754665159789762`*^9, 3.6754665332223797`*^9}, {3.6805293873642006`*^9, 
+   3.6805294049080873`*^9}, {3.680529472841741*^9, 3.680529491352544*^9}, {
+   3.6819834931353087`*^9, 3.68198375551136*^9}, {3.6819839601344156`*^9, 
+   3.6819840037025576`*^9}, {3.683383977046172*^9, 3.683383979734097*^9}, {
+   3.683384722964891*^9, 3.6833848319998426`*^9}, {3.683384886001602*^9, 
+   3.683385037628475*^9}, {3.6833850750132113`*^9, 3.683385142412175*^9}, {
+   3.6833852348517103`*^9, 3.683385314601664*^9}, {3.683385406449182*^9, 
+   3.683385406728355*^9}, {3.683385453608832*^9, 3.683385481250505*^9}, {
+   3.683385616655489*^9, 3.683385690581037*^9}, {3.683385731070568*^9, 
+   3.683385777542857*^9}, {3.683385893926113*^9, 3.683385907166305*^9}, {
+   3.68338703928496*^9, 3.683387059027585*^9}, {3.683387099514896*^9, 
+   3.683387195479309*^9}, {3.683389020811318*^9, 3.683389054887562*^9}, {
+   3.6833890934216967`*^9, 3.6833891086953707`*^9}, {3.6833934244465*^9, 
+   3.683393569088462*^9}, {3.683472922708377*^9, 3.6834729690379343`*^9}},
+ CellID->502606667]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`lambda$$ = 
+    0.00005, $CellContext`R$$ = 60, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`R$$], 60, 
+       Row[{"radius of curvature of lens ", 
+         Style["R", Italic], ", cm"}]}, 20, 150, 10}, {{
+       Hold[$CellContext`lambda$$], 0.00005, "wavelength \[Lambda], cm"}, 
+      0.00004, 0.00008, 0.00001}, {{
+       Hold[$CellContext`a$$], 1, "plots"}, {
+      1 -> "simulation of Newton's rings (reflected)", 2 -> 
+       "simulation of Newton's rings (transmitted)", 3 -> 
+       "line intensity profile of Newton's rings (reflected)", 4 -> 
+       "line intensity profile of Newton's rings (transmitted)", 5 -> 
+       "Newton's rings (reflected) intensity profile: combined plot", 6 -> 
+       "Newton's rings (transmitted) intensity profile: combined plot"}}, {
+      Hold[
+       Column[{
+         Manipulate`Place[1], 
+         Manipulate`Place[2], 
+         Manipulate`Place[3]}, Alignment -> Left]], 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
+    400., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`R$44312$$ = 
+    0, $CellContext`lambda$44313$$ = 0, $CellContext`a$44314$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     2, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`lambda$$ = 
+        0.00005, $CellContext`R$$ = 60}, "ControllerVariables" :> {
+        Hold[$CellContext`R$$, $CellContext`R$44312$$, 0], 
+        Hold[$CellContext`lambda$$, $CellContext`lambda$44313$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$44314$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Switch[$CellContext`a$$, 1, 
+        DensityPlot[
+        Cos[Pi 2 ((($CellContext`x^2 + $CellContext`y^2)/(
+              2 $CellContext`R$$))/$CellContext`lambda$$) + 
+           Pi/2]^2, {$CellContext`x, -0.2, 0.2}, {$CellContext`y, -0.2, 0.2}, 
+         PlotPoints -> 70, FrameTicksStyle -> Directive[Black, 10], ImageSize -> 
+         400, FrameLabel -> {
+           Style["distance, cm", Black, 14], 
+           Style["distance, cm", Black, 14]}], 2, 
+        DensityPlot[
+        Cos[Pi 2 ((($CellContext`x^2 + $CellContext`y^2)/(
+             2 $CellContext`R$$))/$CellContext`lambda$$)]^2, {$CellContext`x, \
+-0.2, 0.2}, {$CellContext`y, -0.2, 0.2}, PlotPoints -> 70, FrameTicksStyle -> 
+         Directive[Black, 10], ImageSize -> 400, FrameLabel -> {
+           Style["distance, cm", Black, 14], 
+           Style["distance, cm", Black, 14]}], 3, 
+        Plot[
+        Cos[Pi 2 (($CellContext`r^2/(
+              2 $CellContext`R$$))/$CellContext`lambda$$) + 
+           Pi/2]^2, {$CellContext`r, 0.001, 0.2}, Frame -> True, 
+         FrameTicksStyle -> Directive[Black, 10], ImageSize -> 400, 
+         FrameLabel -> {
+           Style["radius, cm", Black, 14], 
+           Style["intensity, a.u.", Black, 14]}, Axes -> True, PlotStyle -> 
+         Darker[Yellow], AspectRatio -> 1], 4, 
+        Plot[
+        Cos[Pi 2 (($CellContext`r^2/(
+             2 $CellContext`R$$))/$CellContext`lambda$$)]^2, {$CellContext`r, 
+          0.001, 0.2}, Frame -> True, FrameTicksStyle -> Directive[Black, 10],
+          ImageSize -> 400, FrameLabel -> {
+           Style["radius, cm", Black, 14], 
+           Style["intensity, a.u.", Black, 14]}, Axes -> True, PlotStyle -> 
+         Darker[Pink], AspectRatio -> 1], 5, 
+        Show[
+         DensityPlot[
+         Cos[Pi 2 (($CellContext`r^2/(
+               2 $CellContext`R$$))/$CellContext`lambda$$) + 
+            Pi/2]^2, {$CellContext`r, 0.001, 0.2}, {$CellContext`y, 0.001, 1},
+           PlotPoints -> 100, Frame -> True, FrameTicksStyle -> 
+          Directive[Black, 10], ImageSize -> 400, FrameLabel -> {
+            Style["radius, cm", Black, 14], 
+            Style["intensity, a.u.", Black, 14]}, Axes -> True], 
+         Plot[
+         Cos[Pi 2 (($CellContext`r^2/(
+               2 $CellContext`R$$))/$CellContext`lambda$$) + 
+            Pi/2]^2, {$CellContext`r, 0.001, 0.2}, Frame -> True, 
+          FrameLabel -> {
+           "radius, cm", "intensity, a.u.", "Newton's rings (reflected)"}, 
+          Axes -> True, PlotStyle -> {
+            Darker[Blue], Dashed}], AspectRatio -> 1], 6, 
+        Show[
+         DensityPlot[
+         Cos[Pi 2 (($CellContext`r^2/(
+              2 $CellContext`R$$))/$CellContext`lambda$$)]^2, {$CellContext`r,
+            0.001, 0.2}, {$CellContext`y, 0.001, 1}, PlotPoints -> 100, Frame -> 
+          True, FrameTicksStyle -> Directive[Black, 10], ImageSize -> 400, 
+          FrameLabel -> {
+            Style["radius, cm", Black, 14], 
+            Style["intensity, a.u.", Black, 14]}, Axes -> True], 
+         Plot[
+         Cos[Pi 2 (($CellContext`r^2/(
+              2 $CellContext`R$$))/$CellContext`lambda$$)]^2, {$CellContext`r,
+            0.001, 0.2}, Frame -> True, ImageSize -> 400, 
+          FrameLabel -> {
+           "radius, cm", "intensity, a.u.", "Newton's rings(transmitted)"}, 
+          Axes -> True, PlotStyle -> {
+            Darker[Purple], Dashed}], AspectRatio -> 1]], 
+      "Specifications" :> {{{$CellContext`R$$, 60, 
+          Row[{"radius of curvature of lens ", 
+            Style["R", Italic], ", cm"}]}, 20, 150, 10, Appearance -> 
+         "Labeled", ControlPlacement -> 
+         1}, {{$CellContext`lambda$$, 0.00005, "wavelength \[Lambda], cm"}, 
+         0.00004, 0.00008, 0.00001, Appearance -> "Labeled", ControlPlacement -> 
+         2}, {{$CellContext`a$$, 1, "plots"}, {
+         1 -> "simulation of Newton's rings (reflected)", 2 -> 
+          "simulation of Newton's rings (transmitted)", 3 -> 
+          "line intensity profile of Newton's rings (reflected)", 4 -> 
+          "line intensity profile of Newton's rings (transmitted)", 5 -> 
+          "Newton's rings (reflected) intensity profile: combined plot", 6 -> 
+          "Newton's rings (transmitted) intensity profile: combined plot"}, 
+         ControlType -> PopupMenu, ControlPlacement -> 3}, 
+        Column[{
+          Manipulate`Place[1], 
+          Manipulate`Place[2], 
+          Manipulate`Place[3]}, Alignment -> Left]}, "Options" :> {}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{448., {264., 271.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->1237987804],
+
+Cell[CellGroupData[{
+
+Cell["CAPTION", "Section",
+ CellFrame->{{0, 0}, {1, 0}},
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ FontFamily->"Helvetica",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0.597406, 0, 0.0527047]],
+
+Cell["\<\
+Newton's rings appear as a series of alternating bright and dark rings when \
+monochromatic light is incident on a spherical lens in contact with a flat \
+surface.\
+\>", "Text"]
+}, Close]]
+}, Open  ]],
+
+Cell[TextData[{
+ "The intensity variation in the interference pattern for Newton's rings for \
+transmitted light is given by the equation ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"I", "=", 
+    RowBox[{
+     SubscriptBox["I", "0"], 
+     RowBox[{
+      SuperscriptBox["cos", "2"], "(", 
+      FormBox[
+       FractionBox[
+        RowBox[{"2", "\[Pi]", " ", 
+         SuperscriptBox["r", 
+          RowBox[{" ", "2"}]]}], 
+        RowBox[{"2", "R", " ", "\[Lambda]"}]],
+       TraditionalForm], ")"}]}]}], TraditionalForm]], "InlineMath"],
+ ". The intensity of the rings for reflected light is given by the equation \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"I", "=", 
+    RowBox[{
+     SubscriptBox["I", "0"], 
+     RowBox[{
+      SuperscriptBox["cos", "2"], "(", 
+      RowBox[{
+       FormBox[
+        FractionBox[
+         RowBox[{"2", "\[Pi]", " ", 
+          SuperscriptBox["r", 
+           RowBox[{" ", "2"}]]}], 
+         RowBox[{"2", "R", " ", "\[Lambda]"}]],
+        TraditionalForm], "+", 
+       FormBox[
+        FractionBox["\[Pi]", "2"],
+        TraditionalForm]}], ")"}]}]}], TraditionalForm]], "InlineMath"],
+ ", since there is a phase change of ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["\[Pi]", "2"], TraditionalForm]], "InlineMath"],
+ " after reflection."
+}], "Text"],
+
+Cell[TextData[{
+ "Here ",
+ Cell[BoxData[
+  FormBox["\[Lambda]", TraditionalForm]], "InlineMath"],
+ " is the wavelength of light, ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]], "InlineMath"],
+ " is the radius of the Newton's rings and ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]], "InlineMath"],
+ " is the radius of curvature of the plano-convex lens. "
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell["DETAILS", "Section",
+ CellFrame->{{0, 0}, {1, 0}},
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ FontFamily->"Helvetica",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0.597406, 0, 0.0527047]],
+
+Cell["References", "Text"],
+
+Cell[TextData[{
+ "[1] K. D. M",
+ "\[ODoubleDot]",
+ "ller, ",
+ StyleBox["Optics: Learning by Computing with Examples Using MathCAD",
+  FontSlant->"Italic"],
+ ", New York: Springer, 2003."
+}], "Text"],
+
+Cell[TextData[{
+ "[2] A. N. Mateev, ",
+ StyleBox["Optics",
+  FontSlant->"Italic"],
+ ", Moscow: Mir Publishers, 1988."
+}], "Text"]
+}, Close]],
+
+Cell["THIS NOTEBOOK IS THE SOURCE CODE FROM", "Text",
+ CellFrame->{{0, 0}, {0, 0}},
+ CellMargins->{{48, 10}, {4, 28}},
+ CellGroupingRules->{"SectionGrouping", 25},
+ CellFrameMargins->{{48, 48}, {6, 5}},
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ FontFamily->"Helvetica",
+ FontSize->10,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0.597406, 0, 0.0527047]],
+
+Cell[TextData[{
+ "\[NonBreakingSpace]",
+ ButtonBox["Kallol Das",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/author.html?author=Kallol+Das"], 
+    None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/author.html?author=Kallol+Das"]
+}], "Text",
+ CellMargins->{{48, Inherited}, {0, Inherited}},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.6],
+ CellID->119518115],
+
+Cell[TextData[{
+ "\"",
+ ButtonBox["Intensity Profiles for Newton's Rings",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/IntensityProfilesForNewtonsRings/"]\
+, None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/IntensityProfilesForNewtonsRings/"],
+ "\"",
+ "\[ParagraphSeparator]\[NonBreakingSpace]",
+ ButtonBox["http://demonstrations.wolfram.com/\
+IntensityProfilesForNewtonsRings/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/IntensityProfilesForNewtonsRings/"]\
+, None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/IntensityProfilesForNewtonsRings/"],
+ "\[ParagraphSeparator]\[NonBreakingSpace]",
+ ButtonBox["Wolfram Demonstrations Project",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/"],
+ "\[ParagraphSeparator]\[NonBreakingSpace]",
+ "Published: ",
+ "September 22, 2016"
+}], "Text",
+ CellMargins->{{48, Inherited}, {0, Inherited}},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.5]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A full-function Wolfram ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " system is required to edit this notebook.\n",
+ StyleBox[ButtonBox["GET WOLFRAM MATHEMATICA \[RightGuillemet]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://www.wolfram.com/products/mathematica/"], None},
+  ButtonNote->"http://www.wolfram.com/products/mathematica/"],
+  FontFamily->"Helvetica",
+  FontWeight->"Bold",
+  FontSlant->"Italic",
+  FontColor->RGBColor[1, 0.42, 0]]
+}], "Text",
+ CellFrame->True,
+ CellMargins->{{48, 68}, {8, 28}},
+ CellFrameMargins->12,
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ CellChangeTimes->{3.3750111182355957`*^9},
+ ParagraphSpacing->{1., 1.},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.411765],
+ Background->RGBColor[1, 1, 1]],
+
+Cell[TextData[{
+ "\[Copyright] ",
+ StyleBox[ButtonBox["Wolfram Demonstrations Project & Contributors",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/"],
+  FontColor->GrayLevel[0.6]],
+ "\[ThickSpace]\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+ StyleBox[ButtonBox["Terms of Use",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/termsofuse.html"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/termsofuse.html"],
+  FontColor->GrayLevel[0.6]],
+ "\[ThickSpace]\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+ StyleBox[ButtonBox["Make a new version of this Demonstration \
+\[RightGuillemet]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/participate/upload.jsp?id=\
+IntensityProfilesForNewtonsRings"], None},
+  ButtonNote->None],
+  FontColor->GrayLevel[0.6]]
+}], "Text",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellMargins->{{48, 10}, {20, 50}},
+ CellFrameMargins->{{6, 0}, {6, 6}},
+ CellFrameColor->GrayLevel[0.6],
+ FontFamily->"Verdana",
+ FontSize->9,
+ FontColor->GrayLevel[0.6]]
+}, Open  ]]
+},
+Editable->True,
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+CellInsertionPointCell->None,
+WindowSize->{710, 650},
+WindowMargins->{{Inherited, Inherited}, {Inherited, 0}},
+WindowElements->{
+ "StatusArea", "MemoryMonitor", "MagnificationPopUp", "VerticalScrollBar", 
+  "MenuBar"},
+WindowTitle->"Intensity Profiles for Newton's Rings - Source",
+DockedCells->{},
+CellContext->Notebook,
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[640, 23, 157, 3, 70, "Section"],
+Cell[800, 28, 3749, 65, 70, "Section"],
+Cell[4552, 95, 20232, 454, 70, "Input",
+ CellID->502606667]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24821, 554, 7107, 137, 70, "Output",
+ CellID->1237987804],
+Cell[CellGroupData[{
+Cell[31953, 695, 209, 6, 70, "Section"],
+Cell[32165, 703, 187, 4, 70, "Text"]
+}, Close]]
+}, Open  ]],
+Cell[32378, 711, 1286, 42, 70, "Text"],
+Cell[33667, 755, 375, 11, 70, "Text"],
+Cell[CellGroupData[{
+Cell[34067, 770, 209, 6, 70, "Section"],
+Cell[34279, 778, 26, 0, 70, "Text"],
+Cell[34308, 780, 198, 7, 70, "Text"],
+Cell[34509, 789, 129, 5, 70, "Text"]
+}, Close]],
+Cell[34652, 797, 355, 9, 70, "Text",
+ CellGroupingRules->{"SectionGrouping", 25}],
+Cell[35010, 808, 427, 14, 70, "Text",
+ CellID->119518115],
+Cell[35440, 824, 1102, 32, 70, "Text"],
+Cell[CellGroupData[{
+Cell[36567, 860, 793, 24, 70, "Text"],
+Cell[37363, 886, 1204, 33, 70, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+(* NotebookSignature xTNYvY9cjhYZyB0IHEB0DmKo *)
