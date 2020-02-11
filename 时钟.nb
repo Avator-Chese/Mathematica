@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41789,       1010]
-NotebookOptionsPosition[     40813,        987]
-NotebookOutlinePosition[     41200,       1004]
-CellTagsIndexPosition[     41157,       1001]
+NotebookDataLength[     41743,       1008]
+NotebookOptionsPosition[     40815,        986]
+NotebookOutlinePosition[     41184,       1002]
+CellTagsIndexPosition[     41141,        999]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -684,19 +684,18 @@ Cell[BoxData[{
     RowBox[{"AutorunSequencing", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], "]"}], 
-  "\n"}], "\[IndentingNewLine]"}], "Input",
+  "\[IndentingNewLine]"}], "\n"}], "Input",
  CellChangeTimes->{{3.752880525347217*^9, 3.752881316353175*^9}, 
    3.75288155976114*^9, {3.752881639251268*^9, 3.7528816627944603`*^9}},
- CellLabel->
-  "In[361]:=",ExpressionUUID->"3bc9b1a3-f53e-4ac7-be3b-a3f90cd2bb66"],
+ CellLabel->"In[10]:=",ExpressionUUID->"3bc9b1a3-f53e-4ac7-be3b-a3f90cd2bb66"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`hourCtrl$$ = 3, $CellContext`marking$$ = 
     "\:6570\:5b57", $CellContext`minCtrl$$ = 26, $CellContext`moment$$ = 
-    0, $CellContext`option$$ = "\:52a8\:6001", $CellContext`secCtrl$$ = 
-    45, $CellContext`shape$$ = "\:5251\:5f62", Typeset`show$$ = True, 
+    2, $CellContext`option$$ = "\:52a8\:6001", $CellContext`secCtrl$$ = 
+    45, $CellContext`shape$$ = "\:6807\:51c6", Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{
@@ -736,10 +735,10 @@ Cell[BoxData[
        Hold[$CellContext`moment$$], 0, "\:9009\:62e9\:65f6\:523b"}, {0, 1, 2, 
       3, 4, 5, 6, 7, 8, 9, 10, 11}}}, Typeset`size$$ = {300., {146., 154.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`option$867590$$ = 0, $CellContext`shape$867591$$ = 
-    0, $CellContext`marking$867592$$ = 0, $CellContext`hourCtrl$867593$$ = 
-    0, $CellContext`minCtrl$867594$$ = 0, $CellContext`secCtrl$867595$$ = 
-    0, $CellContext`moment$867596$$ = 0}, 
+    False, $CellContext`option$9881$$ = 0, $CellContext`shape$9882$$ = 
+    0, $CellContext`marking$9883$$ = 0, $CellContext`hourCtrl$9884$$ = 
+    0, $CellContext`minCtrl$9885$$ = 0, $CellContext`secCtrl$9886$$ = 
+    0, $CellContext`moment$9887$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`hourCtrl$$ = 3, $CellContext`marking$$ = 
@@ -747,13 +746,13 @@ Cell[BoxData[
         0, $CellContext`option$$ = "\:9759\:6001", $CellContext`secCtrl$$ = 
         45, $CellContext`shape$$ = "\:6807\:51c6"}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`option$$, $CellContext`option$867590$$, 0], 
-        Hold[$CellContext`shape$$, $CellContext`shape$867591$$, 0], 
-        Hold[$CellContext`marking$$, $CellContext`marking$867592$$, 0], 
-        Hold[$CellContext`hourCtrl$$, $CellContext`hourCtrl$867593$$, 0], 
-        Hold[$CellContext`minCtrl$$, $CellContext`minCtrl$867594$$, 0], 
-        Hold[$CellContext`secCtrl$$, $CellContext`secCtrl$867595$$, 0], 
-        Hold[$CellContext`moment$$, $CellContext`moment$867596$$, 0]}, 
+        Hold[$CellContext`option$$, $CellContext`option$9881$$, 0], 
+        Hold[$CellContext`shape$$, $CellContext`shape$9882$$, 0], 
+        Hold[$CellContext`marking$$, $CellContext`marking$9883$$, 0], 
+        Hold[$CellContext`hourCtrl$$, $CellContext`hourCtrl$9884$$, 0], 
+        Hold[$CellContext`minCtrl$$, $CellContext`minCtrl$9885$$, 0], 
+        Hold[$CellContext`secCtrl$$, $CellContext`secCtrl$9886$$, 0], 
+        Hold[$CellContext`moment$$, $CellContext`moment$9887$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -806,9 +805,10 @@ $CellContext`arrowSecondHand]]; Graphics[{
                Dynamic[
                 Refresh[
                  DateString[], UpdateInterval -> 1]], 
-               Row[{
-                "digital form", $CellContext`hour$, ":", $CellContext`min$, 
-                 ":", $CellContext`sec$}]], {0, 1.15}], Black, 14], 
+               
+               Row[{"digital form", $CellContext`hour$, 
+                 ":", $CellContext`min$, ":", $CellContext`sec$}]], {
+              0, 1.15}], Black, 14], 
             Thickness[0.02], 
             Circle[], 
             Thickness[0.003], 
@@ -954,9 +954,8 @@ $CellContext`arrowSecondHand]]; Graphics[{
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.7528816649908543`*^9},
- CellLabel->
-  "Out[373]=",ExpressionUUID->"bb017445-8502-45b8-8cf4-0b18aeb29b8c"]
+ CellChangeTimes->{3.7528816649908543`*^9, 3.7899975028930893`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"cc944982-56c5-41bb-aa40-3b52970f7e34"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -988,8 +987,7 @@ Cell[BoxData[""], "Input",
 WindowSize->{1094, 755},
 WindowMargins->{{36, Automatic}, {16, Automatic}},
 Magnification->1.5,
-FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
-\:670828\:65e5)",
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (2019\:5e744\:67088\:65e5)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -1004,17 +1002,15 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 25664, 668, 5049, "Input",ExpressionUUID->"3bc9b1a3-f53e-4ac7-be3b-a3f90cd2bb66"],
-Cell[26247, 692, 13700, 266, 416, "Output",ExpressionUUID->"bb017445-8502-45b8-8cf4-0b18aeb29b8c"]
+Cell[580, 22, 25660, 667, 5049, "Input",ExpressionUUID->"3bc9b1a3-f53e-4ac7-be3b-a3f90cd2bb66"],
+Cell[26243, 691, 13706, 266, 416, "Output",ExpressionUUID->"cc944982-56c5-41bb-aa40-3b52970f7e34"]
 }, Open  ]],
-Cell[39962, 961, 152, 3, 46, InheritFromParent,ExpressionUUID->"1bc437c4-a46b-451d-bcb8-3a0dad803066"],
-Cell[40117, 966, 225, 4, 46, "Input",ExpressionUUID->"df927831-c7cd-46ae-8ef5-95ea5413872e"],
-Cell[40345, 972, 154, 3, 46, InheritFromParent,ExpressionUUID->"8d7376e7-9b3d-4aad-82ee-5144e2a02452"],
-Cell[40502, 977, 152, 3, 46, "Input",ExpressionUUID->"b5c9b845-1642-4be6-b303-3b7963f87a3c"],
-Cell[40657, 982, 152, 3, 46, InheritFromParent,ExpressionUUID->"8e2f6b0d-e25a-4e64-9b06-67f66361acef"]
+Cell[39964, 960, 152, 3, 46, "Input",ExpressionUUID->"1bc437c4-a46b-451d-bcb8-3a0dad803066"],
+Cell[40119, 965, 225, 4, 46, "Input",ExpressionUUID->"df927831-c7cd-46ae-8ef5-95ea5413872e"],
+Cell[40347, 971, 154, 3, 46, "Input",ExpressionUUID->"8d7376e7-9b3d-4aad-82ee-5144e2a02452"],
+Cell[40504, 976, 152, 3, 46, "Input",ExpressionUUID->"b5c9b845-1642-4be6-b303-3b7963f87a3c"],
+Cell[40659, 981, 152, 3, 46, "Input",ExpressionUUID->"8e2f6b0d-e25a-4e64-9b06-67f66361acef"]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
