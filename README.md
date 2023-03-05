@@ -1,2 +1,0 @@
-# Mathematica
- My mathematica projects
